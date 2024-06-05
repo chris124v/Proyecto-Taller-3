@@ -6,4 +6,4 @@ Christopher Daniel Vargas Villalta
 Jervis Fabricio Esquivel Solano
 
 Profesor:
-Aurelio Sanabria
+Aurelio Sanabria Rodriguez
