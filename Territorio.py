@@ -38,6 +38,26 @@ tablero = crear_tablero(tamaño_tablero)
 print("Tablero creado con tamaño {} x {}".format(len(tablero), len(tablero)))
 imprimir_tablero(tablero)
 
+# Función para imprimir el tablero
+def imprimir_tablero(tablero):
+    leyenda = {
+        0: " ",
+        1: "I",
+        2: "P",
+        3: "AC",
+        4: "U"
+    }
 
+    print("  ", end=" ")
+    for i in range(len(tablero)):
+        print(i + 1, end="  ")
+    print()
+    for i in range(len(tablero)):
+        print(chr(65 + i), end="  ")
+        for j in range(len(tablero)):
+            print(leyenda[tablero[i][j]], end="  ")
+        print()
+
+imprimir_tablero(tablero)
 
 
