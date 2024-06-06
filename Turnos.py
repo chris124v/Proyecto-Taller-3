@@ -138,3 +138,19 @@ def turno_dia(tablero, tamaño_tablero):
         if columna_completa_usurpadores:
             print("¡Perdiste! Los usurpadores tomaron una columna entera.")
             exit()
+
+def turno_noche(tablero, tamaño_tablero):
+
+    print("\nTurno de noche\n")
+
+def turnos(tablero, tamaño_tablero):
+    turno = "día"
+    while True:
+        if turno == "día":
+            turno_dia(tablero, tamaño_tablero)
+            turno = "noche"
+        else:
+            turno_noche(tablero, tamaño_tablero)
+            turno = "día"
+
+turnos()
