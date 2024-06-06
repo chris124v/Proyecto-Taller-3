@@ -28,7 +28,7 @@ no_al_alambrado()
 def reglas_juego():
 
     print("\nReglas del juego:\n")
-    print("1. El juego se desarrolla en un tablero de 30x30.")
+    print("1. El juego se desarrolla en un tablero de tamaño variable.")
     print("2. El juego tiene turnos de día y noche.")
     print("3. Durante el día, puedes hacer proyectos, iniciativas y actividades culturales.")
     print("4. Durante la noche, los usurpadores toman territorio de manera random en el tablero.")
@@ -53,7 +53,7 @@ def obtener_tamaño(tamaño=None):
     Si el parámetro tamaño es proporcionado, se ignora y se solicita nuevamente al usuario.
     """
     if tamaño is not None:
-        print("Ignorando el tamaño proporcionado...")
+        print("Tamaño erroneo")
 
     while True:
         tamaño = input("Ingrese el tamaño del tablero (i x j): ")
@@ -62,7 +62,7 @@ def obtener_tamaño(tamaño=None):
             if 1 <= tamaño_tablero <= 24:
                 return tamaño_tablero
             else:
-                print("El tamaño del tablero debe ser entre 1 y 24.")
+                print("\nEl tamaño del tablero debe ser entre 1 y 24.\n")
         else:
             print("\nPor favor, ingrese un número válido.\n")
 
@@ -120,9 +120,11 @@ def menu_principal():
 
         if opcion == 3:
             break
+
         elif opcion == 7:
             print("\nGracias por jugar!\n")
             exit()
+
         else:
             print("\nOpción no válida. Intente de nuevo.\n")
 
@@ -159,7 +161,7 @@ def turno_dia(tablero, tamaño_tablero):
             if 1 <= opcion_turno <= 3:
                 break
 
-        print("Error: El dígito que ingresó es incorrecto. Debe ser 1, 2 o 3.")
+        print("\nError: El dígito que ingresó es incorrecto. Debe ser 1, 2 o 3.\n")
 
     # Validación de fila y columna
     while True:
@@ -187,7 +189,7 @@ def turno_dia(tablero, tamaño_tablero):
                 columnitas = columna - 1
                 break
 
-        print("Error: El dígito o letra que ingresó es incorrecto. Intente nuevamente.")
+        print("\nError: El dígito o letra que ingresó es incorrecto. Intente nuevamente.\n")
 
     if opcion_turno == 1:
 
