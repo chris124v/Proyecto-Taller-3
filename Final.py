@@ -1,4 +1,5 @@
 import random
+import ASCII
 
 # Inicialización del juego
 
