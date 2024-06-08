@@ -1,4 +1,7 @@
 #Proyecto Programado 3
+#Juego de Tablero en la region de Topuria
+#Jervis Fabricio Esquivel Solano y Christopher Daniel Vargas Villalta
+#Este es un juego por turnos de tablero cuyo objetivo se reduce a intentar completar filas o columnas con proyectos para ganar
 
 #Archivo del ASCII Art 
 
