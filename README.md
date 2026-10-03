@@ -1,4 +1,4 @@
-# Proyecto Programado 3 – Topuria 3
+# Proyecto Taller 3
 
 Juego de estrategia por turnos en consola, ambientado en la región ficticia de "Topuria" y hecho en Python para el curso **Taller de Programación**. El jugador basicamente defiende un territorio representado por un tablero: de día crea proyectos, iniciativas y actividades culturales, y de noche los usurpadores intentan quedarse con el territorio.
 
